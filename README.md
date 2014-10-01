@@ -149,4 +149,23 @@ There are currently 12 tables that this library can parse:
   * q1_q12_stellar
   * keplernames
 
+# Storage
+
+You have two options for storage. You can either store the data as JSON or you can store it in Redis. Your choice. JSON is the defualt storage.
+
+You can explicitly state that you would like to use JSON as so:
+```ruby
+Exoplanets.all storage: :json
+```
+
+If you choose to use redis, you can pass redis in as so:
+```ruby
+Exoplanets.all storage: :redis
+```
+
+You can all pass storage options to the `#table` method. Such as:
+```ruby
+Exoplanets.table :exoplanets, storage: :redis
+```
+
 Have fun :)
