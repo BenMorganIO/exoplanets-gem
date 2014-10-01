@@ -115,4 +115,28 @@ The JSON data looks as so:
 
 The key to the exoplanet is a universal unique identifier (UUID). There are, I believe, 78 keys inside of each exoplanet hash.
 
+# Tables
+
+There are currently 12 tables that this library can parse:
+
+* Confirmed planets:
+  * exoplanets
+
+* Kepler Objects of Interest (KOI)
+  * cumulative
+  * q1_q16_koi
+  * q1_q12_koi
+  * q1_q8_koi
+  * q1_q6_koi
+
+* Threshold-Crossing Events (TCEs)
+  * q1_q16_tce
+  * q1_q12_tce
+
+* Kepler Names, Kepler Stellar Properties and Kepler Time Series
+  * keplerstellar
+  * q1_q16_stellar
+  * q1_q12_stellar
+  * keplernames
+
 Have fun :)
