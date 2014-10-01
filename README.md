@@ -19,9 +19,17 @@ load './lib/exoplanets.rb'
 There are two methods for `Exoplanets`:
 
 1. `#all`
-  This method will grab all the tables that IPAC has and store it in JSON.
+  This method will grab all the tables that IPAC has and store it in JSON. Example:
+  ```ruby
+  Exoplanets.all
+  # Now you get to wait for a bit...
+  ```
 2. `#table`
-  This method takes in one parameter (the table name) and will store the information for you.
+  This method takes in one parameter (the table name) and will store the information for you. Example:
+  ```ruby
+  Exoplanets.table :exoplanets
+  # Now you have data on all of the confirmed exoplanets
+  ```
 
 You may find it useful to run this as a cronjob daily and to store the data not in JSON, but in Redis.
 
